@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+body {
+    background: url('k.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+    /* Paksa semua judul h1, h2, dan class header ke tengah */
+.header, h1, h2 {
+    text-align: center !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+
+/* Pembungkus Utama */
+.wrap {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Menu Navigasi Oranye */
+nav.menu {
+    background: #e6a6d8;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+nav.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav.menu ul li {
+    margin: 0;
+}
+
+nav.menu ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: #33343d;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav.menu ul li a:hover {
+    background: #dc55ca;
+}
+
+/* Kunci utama side-by-side sejajar */
+.main-content {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 20px !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+}
+
+/* Konten Kiri */
+.blog {
+    flex: 1 !important;
+    width: auto !important;
+    margin: 0 !important;
+}
+
+.conteudo {
+    background: #f9f9f8;
+    padding: 25px;
+    border: 1px solid #f7f7f8;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.conteudo h1 {
+    margin-top: 0;
+    font-family: Georgia, serif;
+    color: #555;
+    font-weight: normal;
+}
+
+/* Sidebar Kanan */
+.sidebar {
+    width: 300px !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+    float: none !important;
+}
+
+.sidebar .widget {
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #faffe9;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.sidebar .widget h2 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #0088cc;
+}
+
+.conteudo {
+    background: white;
+    padding: 30px;
+    min-height: 450px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.conteudo table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #999;
+}
+
+.conteudo th,
+.conteudo td {
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: left;
+}
+
+.conteudo th {
+    background-color: #198754;
+    color: white;
+}
